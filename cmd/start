@@ -1,0 +1,4 @@
+#!/bin/bash
+set -eu
+
+npx elm-go src/Main.elm --port=8008 --dir=docs --start-page=donut.html --pushstate -- --output=docs/elm.js
