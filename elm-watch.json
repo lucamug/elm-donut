@@ -1,0 +1,10 @@
+{
+    "serve": "./public/",
+    "port": 8003,
+    "targets": {
+        "main": {
+            "inputs": ["./src/Main.elm"],
+            "output": "./public/elm-donut/elm.js"
+        }
+    }
+}

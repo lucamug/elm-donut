@@ -1,23 +1,24 @@
 #!/bin/bash
 set -eu
 
-rm -rf build
+# rm -rf build
+# 
+# mkdir build
+# 
+# time npx elm make src/Main.elm --optimize --output=build/elm.js 
+# time npx terser build/elm.js  --no-rename --compress 'pure_funcs="F2,F3,F4,F5,F6,F7,F8,F9,A2,A3,A4,A5,A6,A7,A8,A9",pure_getters=true,keep_fargs=false,unsafe_comps=true,unsafe=true,passes=2' --mangle --output=build/elm.js 
+# 
+# cp docs/donut.html               build/200.html
+# 
+# cp docs/favicon.ico              build/
+# 
+# cp docs/robots.txt               build/
+# 
+# cp docs/donut.gif                build/
+# 
+# cp docs/_redirects               build/
+# 
+# cp docs/the-functional-donut.png build/
+# 
 
-mkdir build
-
-time npx elm make src/Main.elm --optimize --output=build/elm.js 
-time npx terser build/elm.js  --no-rename --compress 'pure_funcs="F2,F3,F4,F5,F6,F7,F8,F9,A2,A3,A4,A5,A6,A7,A8,A9",pure_getters=true,keep_fargs=false,unsafe_comps=true,unsafe=true,passes=2' --mangle --output=build/elm.js 
-
-cp docs/donut.html               build/200.html
-
-cp docs/favicon.ico              build/
-
-cp docs/robots.txt               build/
-
-cp docs/donut.gif                build/
-
-cp docs/_redirects               build/
-
-cp docs/the-functional-donut.png build/
-
-
+npx elm make src/Main.elm --optimize --output=docs/elm.js

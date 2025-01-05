@@ -1,4 +1,5 @@
 #!/bin/bash
 set -eu
 
-npx elm-go src/Main.elm --port=8008 --dir=docs --start-page=donut.html --pushstate -- --output=docs/elm.js
+# npx elm-go src/Main.elm --port=8008 --dir=docs --start-page=donut.html --pushstate -- --output=docs/elm.js
+npx elm-watch@2.0.0-beta.3 hot main | cat
